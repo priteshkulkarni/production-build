@@ -1,0 +1,167 @@
+.content {
+	 margin-top: 100px;
+}
+ h2 {
+	 color: white;
+	 margin-bottom: 20px;
+}
+ article {
+	 margin-top: 10px;
+}
+ .full-overlay {
+	 position: relative;
+	 z-index: 1;
+	 height: 350px;
+	 text-align: center;
+	 padding: 40px;
+	 background: url("https://unsplash.imgix.net/uploads%2F14115409319165441c030%2Fa1d0230a?q=75&fm=jpg&auto=format&s=b6975e3020e4ec063ec03250904506e0") no-repeat;
+	 background-size: cover;
+}
+ .full-overlay:after {
+	 content: "";
+	 width: 50%;
+	 height: auto;
+	 position: absolute;
+	 z-index: -1;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+}
+ .full-overlay:after {
+	 background: rgba(0, 0, 0, 0.75);
+}
+ .gradient-overlay {
+	 position: relative;
+	 z-index: 1;
+	 height: 350px;
+	 text-align: center;
+	 padding: 40px;
+	 background: url("https://unsplash.imgix.net/uploads%2F14115409319165441c030%2Fa1d0230a?q=75&fm=jpg&auto=format&s=b6975e3020e4ec063ec03250904506e0") no-repeat;
+	 background-size: cover;
+}
+ .gradient-overlay:after {
+	 content: "";
+	 width: 50%;
+	 height: auto;
+	 position: absolute;
+	 z-index: -1;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+}
+ .gradient-overlay:after {
+	 background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	/* FF3.6+ */
+	 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+	/* Chrome,Safari4+ */
+	 background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	/* Chrome10+,Safari5.1+ */
+	 background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	/* Opera 11.10+ */
+	 background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	/* IE10+ */
+	 background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+	/* W3C */
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0);
+	/* IE6-9 */
+}
+ .photo-overlay {
+	 position: relative;
+	 z-index: 1;
+	 height: 350px;
+	 text-align: center;
+	 padding: 40px;
+	 background: url("https://unsplash.imgix.net/uploads%2F14115409319165441c030%2Fa1d0230a?q=75&fm=jpg&auto=format&s=b6975e3020e4ec063ec03250904506e0") no-repeat;
+	 background-size: cover;
+}
+ .photo-overlay:after {
+	 content: "";
+	 width: 50%;
+	 height: auto;
+	 position: absolute;
+	 z-index: -1;
+	 top: 0;
+	 right: 0;
+	 left: 0;
+	 bottom: 0;
+}
+ .photo-overlay:after {
+	 background: url("http://cdn.screenrant.com/wp-content/uploads/Yoda-Eyes-Closed.jpg") no-repeat;
+	 opacity: 0.5;
+	 background-size: cover;
+}
+ html .btn {
+	 border: 3px solid #e0cb77;
+	 font-family: inherit;
+	 font-size: inherit;
+	 text-decoration: none;
+	 color: white;
+	 background: transparent;
+	 cursor: pointer;
+	 padding: 1.4rem 4rem;
+	 display: inline-block;
+	 text-align: center;
+	 margin: 0;
+	 text-transform: uppercase;
+	 letter-spacing: 1px;
+	 outline: none;
+	 position: relative;
+	 border-radius: 2px;
+	 -webkit-transition: all 0.1s ease-in-out;
+	 -moz-transition: all 0.1s ease-in-out;
+	 transition: all 0.1s ease-in-out;
+}
+
+.module {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
+  background-attachment: fixed;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+.module > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+}
+.module > header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  transform: scale(2) translateY(20px);
+}
+.module > header > h1 {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ @media handheld, only screen and (max-width: 867px) {
+	 html .btn {
+		 font-size: 80%;
+	}
+}
+ html .btn:hover {
+	 background: #e5d38c;
+	 color: #86711f;
+}
